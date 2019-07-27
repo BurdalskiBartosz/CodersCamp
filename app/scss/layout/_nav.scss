@@ -1,0 +1,48 @@
+.nav{ 
+    &__mobile-trigger{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        height: 35px;
+        border: 0;
+        outline: none;
+        border-top: 5px solid black;
+        background: transparent;
+        transition: 0.3s transform linear;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 5px solid black;
+            transform: translateY(10px);
+        }     
+        &::after {
+            transform: translateY(25px);
+            transition: 0.3s transform linear;
+        }
+
+        // DO JS'A
+        &:focus {
+            transform: rotate(45deg) translateY(5px);
+            border: none;
+        }
+        &:focus::after {
+            transform: rotate(-90deg) translateX(-10px);
+        }     
+    }
+    &__content{   
+        display:flex;
+        justify-content:space-between;
+        transform: translateX(-100%)
+    }
+    &__title{
+        display: none;
+    }
+    &__list{
+        display:flex;
+        list-style:none;
+    }
+}
