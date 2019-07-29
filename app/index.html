@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CodersCamp-Project</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Ubuntu&display=swap&subset=latin-ext"
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Ubuntu:400,700&display=swap&subset=latin-ext"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/c6f9d808e1.js"></script>
@@ -62,10 +62,10 @@
         </div>
     </aside>
     <section class="container">
-        <h2 class="container-info__title">About me</h2>
         <div class="container-info container-box">
+            <h2 class="container-info__title">About me</h2>
             <div class="container-info__img-wrapper">
-                <img src="container-info__img" alt="">
+                <img class="container-info__img" src="./assets/pictures/avatar.jpg" alt="">
             </div>
             <div class="container-info__info">
                 <ul class="container-info__list list">
@@ -88,23 +88,29 @@
             </div>
         </div>
     </section>
-    <section class="container-skills container container--reverse">
-        <h2>Skills</h2>
+    <section class="container container--reverse">
         <div class="container-skills container-box">
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
+            <h2 class="container-skills__title">Skills</h2>
+            <div class="container-skills__card container-skills__card--border">
+                <img class="container-skills__img" src="./assets/pictures/icon_UxUi.png" alt="">
+                <div class="container-skills__skill">
+                    <span class="skill__text--color">UX/UI</span>
+                    <span class="skill__text">Figma</span>
+                </div>
             </div>
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="container-skills__card container-skills__card--border">
+                <img class="container-skills__img" src="./assets/pictures/icon_frontend.png" alt="">
+                <div class="container-skills__skill">
+                    <span class="skill__text--color">Front End</span>
+                    <span class="skill__text">Html, CSS, JavaScript</span>
+                </div>
             </div>
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="container-skills__card">
+                <img class="container-skills__img" src="./assets/pictures/icon_backend.png" alt="">
+                <div class="container-skills__skill">
+                    <span class="skill__text--color">Back End</span>
+                    <span class="skill__text">PHP, Node.js</span>
+                </div>
             </div>
         </div>
     </section>

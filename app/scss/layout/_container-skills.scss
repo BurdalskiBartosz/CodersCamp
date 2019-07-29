@@ -1,3 +1,39 @@
 .container-skills {
-    // background-color: blue;
+    &__title{
+        position: absolute;
+        top: -30px;
+        left: 30%;
+        font-family: $secondary-font;
+        font-weight: bold;
+    }
+    &__card{ 
+        width: 90%;
+        max-width: 220px;
+        text-align: center;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        &--border{
+            border-bottom: 2px dotted $primary-color;
+        }
+    }
+    &__skill{
+        margin-top: 35px;
+    }
+    .skill__text{
+        display: block;
+        &--color{
+            color:$primary-color;
+            font-weight: bold;
+        }
+    }
+    @media (min-width:600px) {
+        &__card{
+        width: calc(100%/3);
+        max-width: none;
+            &--border{
+                border-bottom: none;
+                border-right: 2px dotted $primary-color;
+            }
+        }
+    }
 }
