@@ -1,0 +1,30 @@
+.container-info{
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    background-color: white;
+    padding: 20px;
+    &__img-wrapper{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    &__info{
+        margin: 20px 0;
+    }
+    &__item{
+        &--color{
+            color: $primary-color;
+        }
+    }
+    &__description{
+        padding-top: 10px;
+        border-top: 2px dotted $primary-color;
+    }
+    @media (min-width:440px), (orientation:landscape) {
+        &__list{
+            margin-left: 20px;
+        }
+    }
+}
