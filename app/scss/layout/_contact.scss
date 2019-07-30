@@ -1,0 +1,19 @@
+.contact{
+    position: relative;
+    padding: 20px;
+    background-color: #FAFAFF;
+    &__title{
+        position: absolute;
+        top: -30px;
+        left: 5%;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__form-box{
+        background-color: #FFFFFF;
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+    }
+}
