@@ -22,11 +22,16 @@ body{
         flex-wrap: wrap;
         align-items: center;
         background-color: white;
-
         max-width: 1240px;
         padding: 20px;
         box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
         margin: 0 auto;
+        &--fullScreen{
+            max-width: none;
+            width: 100%;
+            padding: 0;
+            box-shadow: none;        
+        }
     }
 }
 .list{

@@ -1,0 +1,79 @@
+.firstPhoto{
+    background: url("../../assets/pictures/portfolio_picture/work-abroad-unspl.png");
+}
+.secondPhoto{
+    background: url("../../assets/pictures/portfolio_picture/20180619_150208-1.png");
+}
+.thirdPhoto{
+    background: url("../../assets/pictures/portfolio_picture/RAW-BEETROOT-MINT.png");
+}
+.fourthPhoto{
+    background: url("../../assets/pictures/portfolio_picture/32739439685_8ac3345836_b.png");
+}
+.fifthPhoto{
+    background: url("../../assets/pictures/portfolio_picture/porady-grafiki_10_u1.jpg");
+}
+.portfolioPhoto{
+    background-size: cover;
+    background-position: 50% 70%;
+}
+.container-projects{
+    max-width: 1440px;
+    margin: 0 auto;
+    &__title{
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__project{
+        width: 100%;
+        height: 220px;
+        position: relative;
+        &:hover>.container-projects__description{
+            opacity: 1;
+        }
+    }
+    &__description{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);      
+        color: white;  
+        padding: 10px 20px;
+        opacity: 0;
+        transition: 0.3s ease-in;
+    }
+    .description__title{
+        font-size: 1.5rem;
+    }
+    .description__description{
+        max-width: 70%;
+        font-size: 14px;
+        margin: 10px 0 25px 0;
+    }
+    @media (min-width:500px){
+        &__project{
+            margin: 0 auto;
+        }
+    }
+    @media (min-width:600px){
+        &__project{
+            // margin: 0 auto;
+            max-width: 50%;
+            &--downRow:last-child{
+                max-width: none;
+                width: 100%;
+            }
+        }
+    }
+    @media (min-width:900px){
+        &__project{
+            max-width: calc(100%/3);
+            &--downRow,&--downRow:last-child{
+                max-width: none;
+                width: 50%;
+            }
+        }
+    }
+}

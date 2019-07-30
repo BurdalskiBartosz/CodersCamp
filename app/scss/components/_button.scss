@@ -1,12 +1,13 @@
 .btn{
-    background: linear-gradient(270deg, $primary-color 14%, #FF9A3D 68.5%);
+    background-image: linear-gradient(270deg, $primary-color 14%, #FF9A3D 68.5%);
     border:1px solid transparent;
     border-radius: 15px;
     padding: 10px 30px;
     color:white;
     transition: .2s ease;
     &:hover{
-        background: transparent;
+        background-image: none;
+        background-color: white;
         color:$primary-color;
         border-color:$primary-color;
     }
