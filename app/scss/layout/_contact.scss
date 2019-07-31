@@ -6,6 +6,9 @@
         position: absolute;
         top: -30px;
         left: 5%;
+        &--form-box{
+            margin-bottom: 20px;
+        }
     }
     &__box{
         display: flex;

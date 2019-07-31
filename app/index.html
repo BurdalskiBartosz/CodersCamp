@@ -179,21 +179,25 @@
                 </div>
             </div>
             <div class="contact__form-box">
-                <h3>Let's start!</h3>
+                <h3 class="contact__title--form-box">Let's start!</h3>
                 <form class="contact__form form" action="">
                     <label class="form__label" for="name">
-                        <input class="form__input form__item" type="text" name="" id="name">
+                        <input placeholder="&nbsp;" class="form__input form__item" type="text" name="name" id="name">
+                        <span class="form__label-text">Name</span>
                     </label>
-                    <label class="form__label" for="name">
-                        <input class="form__input form__item" type="email" name="" id="name">
+                    <label class="form__label" for="email">
+                        <input placeholder="&nbsp;" class="form__input form__item" type="email" name="email" id="email">
+                        <span class="form__label-text">Your e-mail adress</span>
                     </label>
-                    <label class="form__label" for="name">
-                        <input class="form__input form__item" type="text" name="" id="name">
+                    <label class="form__label" for="topic">
+                        <input placeholder="&nbsp;" class="form__input form__item" type="text" name="topic" id="topic">
+                        <span class="form__label-text">Topic</span>
                     </label>
-                    <label class="form__label" for="name">
-                        <input class="form__input form__item" type="text" name="" id="name">
+                    <label class="form__label" for="message">
+                        <textarea placeholder="&nbsp;" class="form__textarea form__item " name="message" id="message"
+                            rows="8" placeholder=""></textarea>
+                        <span class="form__label-text form__label-text--textarea">Message</span>
                     </label>
-                    <textarea class="form__textarea form__item " name="text" rows="8" placeholder=""></textarea>
                     <button type="submit" class="form__btn btn">Send</button>
                 </form>
             </div>
