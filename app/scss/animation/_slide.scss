@@ -1,0 +1,12 @@
+.slideIn{
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: transform 1s, opacity 2s 0.3s;
+    &--left{
+        transform: translateX(200%);
+    }
+}
+.active{
+    opacity: 1;
+    transform: translateX(0);
+}

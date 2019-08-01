@@ -1,5 +1,4 @@
 .contact{
-    position: relative;
     padding: 20px;
     background-color: #FAFAFF;
     &__title{
@@ -18,6 +17,7 @@
         display: none;
     }
     &__box{
+        position: relative;
         display: flex;
         flex-direction: column-reverse;
         max-width: 1240px;

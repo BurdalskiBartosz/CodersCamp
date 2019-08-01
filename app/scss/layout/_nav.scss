@@ -80,7 +80,15 @@ width: 100%;
         }
     }
     @media (min-width: 768px) {
-        padding-top: 25px;
+        height: 80px;
+        transition: 0.5s;
+        &__active{
+            background-color: black;
+            color: white;
+            & .nav__link{
+                color: white;
+            }
+        }
         &__mobile-trigger{
             display: none;
         }
@@ -106,6 +114,7 @@ width: 100%;
             flex-direction: row;
             text-align: center;
             list-style:none;
+            padding-top:20px; 
         }
         &__item{
             font-size: 18px;
