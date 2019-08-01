@@ -1,13 +1,18 @@
 @import "./settings/_colors.scss";
 @import "./settings/_fonts.scss";
-@import "./layout/_main.scss";
+@import "./settings/_main.scss";
+
+
 @import "./components/_button.scss";
+@import "./components/_form.scss";
+@import "./components/_linkBox.scss";
+
+
 @import "./layout/_nav.scss";
 @import "./layout/_header.scss";
 @import "./layout/_sidebar.scss";
 @import "./layout/_info.scss";
 @import "./layout/_skills.scss";
 @import "./layout/_projects.scss";
-@import "./layout/contact.scss";
-@import "./components/form.scss";
+@import "./layout/_contact.scss";
 @import "./layout/_footer.scss";
