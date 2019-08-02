@@ -22,16 +22,16 @@
             </div>
             <ul class="nav__list list">
                 <li class="nav__item">
-                    <a href="#About" class="nav__link link">About me</a>
+                    <a href="#about" class="nav__link link">About me</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#Skills" class="nav__link link">Skills</a>
+                    <a href="#skills" class="nav__link link">Skills</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#Portfolio" class="nav__link link">Portfolio</a>
+                    <a href="#portfolio" class="nav__link link">Portfolio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#Contact" class="nav__link link">Contact</a>
+                    <a href="#contact" class="nav__link link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -40,16 +40,20 @@
         <span class="header__title">Welcome!</span>
         <span class="header__description">My name is Bartosz.</span>
         <div class="link-box">
-            <a class="link-box__link link" href="#twitter">
+            <a class="link-box__link link" rel="nofollow noopener noreferrer" target="_blank"
+                href="https://twitter.com/?lang=pl">
                 <i class="link-box__icon link-box__icon--color fab fa-twitter"></i>
             </a>
-            <a class="link-box__link link" href="#linkedin">
+            <a class="link-box__link link" rel="nofollow noopener noreferrer" target="_blank"
+                href="https://www.linkedin.com/">
                 <i class="link-box__icon link-box__icon--color fab fa-linkedin-in"></i>
             </a>
-            <a class="link-box__link link-box__link--git link" href="#github">
+            <a class="link-box__link link-box__link--git link" rel="nofollow noopener noreferrer" target="_blank"
+                href="https://github.com/BurdalskiBartosz">
                 <i class="link-box__icon fab fa-github"></i>
             </a>
-            <a class="link-box__link link" href="#facebook">
+            <a class="link-box__link link" rel="nofollow noopener noreferrer" target="_blank"
+                href="https://www.facebook.com/">
                 <i class="link-box__icon link-box__icon--color fab fa-facebook-f"></i>
             </a>
         </div>
@@ -61,7 +65,7 @@
             <button class="sidebar__btn btn">Check my CV</button>
         </div>
     </aside>
-    <section class="container slideIn">
+    <section id="about" class="container slideIn">
         <div class="info container-box">
             <h2 class="info__title">About me</h2>
             <div class="info__img-wrapper">
@@ -88,24 +92,24 @@
             </div>
         </div>
     </section>
-    <section class="container slideIn slideIn--left container--reverse">
+    <section id="skills" class="container container--reverse">
         <div class="skills container-box">
             <h2 class="skills__title">Skills</h2>
-            <div class="skills__card skills__card--border">
+            <div class="skills__card  slideIn slideIn--left skills__card--border">
                 <img class="skills__img" src="./assets/pictures/skills_picture/icon_UxUi.png" alt="">
                 <div class="skills__skill">
                     <span class="skill__text--color">UX/UI</span>
                     <span class="skill__text">Figma</span>
                 </div>
             </div>
-            <div class="skills__card skills__card--border">
+            <div class="skills__card  slideIn skills__card--border">
                 <img class="skills__img" src="./assets/pictures/skills_picture/icon_frontend.png" alt="">
                 <div class="skills__skill">
                     <span class="skill__text--color">Front End</span>
                     <span class="skill__text">Html, CSS, JavaScript</span>
                 </div>
             </div>
-            <div class="skills__card">
+            <div class="skills__card  slideIn slideIn--left">
                 <img class="skills__img" src="./assets/pictures/skills_picture/icon_backend.png" alt="">
                 <div class="skills__skill">
                     <span class="skill__text--color">Back End</span>
@@ -114,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="projects slideIn">
+    <section id="portfolio" class="projects slideIn">
         <div class="projects container-box container-box--fullScreen">
             <h2 class="projects__title">Portfolio</h2>
             <div class="projects__project portfolioPhoto firstPhoto">
@@ -166,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="contact slideIn slideIn--left">
+    <section id="contact" class="contact slideIn slideIn--left">
         <div class="contact__box">
             <h2 class="contact__title">Contact us</h2>
             <div class="contact__sidebar">
@@ -177,19 +181,25 @@
                 </div>
                 <div class="contact__address-box">
                     <div class="link-box">
-                        <a class="link-box__link link-box__link--contact link" href="#twitter">
+                        <a class="link-box__link link-box__link--contact link" rel="nofollow noopener noreferrer"
+                            target="_blank" href="https://twitter.com/?lang=pl">
                             <i class="link-box__icon link-box__icon--color fab fa-twitter"></i>
                         </a>
-                        <a class="link-box__link link-box__link--contact link" href="#linkedin">
+                        <a class="link-box__link link-box__link--contact link" rel="nofollow noopener noreferrer"
+                            target="_blank" href="https://www.linkedin.com/">
                             <i class="link-box__icon link-box__icon--color fab fa-linkedin-in"></i>
                         </a>
-                        <a class="link-box__link link-box__link--contact link-box__link--git link" href="#github">
+                        <a class="link-box__link link-box__link--contact link-box__link--git link"
+                            rel="nofollow noopener noreferrer" target="_blank"
+                            href="https://github.com/BurdalskiBartosz">
                             <i class="link-box__icon fab fa-github"></i>
                         </a>
-                        <a class="link-box__link link-box__link--contact link" href="#facebook">
+                        <a class="link-box__link link-box__link--contact link" rel="nofollow noopener noreferrer"
+                            target="_blank" href="https://www.facebook.com/">
                             <i class="link-box__icon link-box__icon--color fab fa-facebook-f"></i>
                         </a>
                     </div>
+
                     <div class="contact__address">
                         <span class="breakLine text--bold">Designer</span>
                         <span class="breakLine text--bold">Poland, Wrocław</span>

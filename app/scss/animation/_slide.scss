@@ -1,4 +1,5 @@
 .slideIn{
+    position: relative;
     transform: translateX(-200%);
     opacity: 0;
     transition: transform 1s, opacity 2s 0.3s;

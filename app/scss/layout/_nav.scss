@@ -5,6 +5,18 @@ left: 0;
 height: 50px;
 z-index: 2;
 width: 100%;
+&::after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    width: 20px;
+    height: 100%;
+    z-index: -1;
+    background-color: transparent;
+    transform-origin: 50% 50%;
+    transition: 0.3s ease;
+}
     &__mobile-trigger{
         position: absolute;
         top: 5px;
@@ -82,11 +94,14 @@ width: 100%;
     @media (min-width: 768px) {
         height: 80px;
         transition: 0.5s;
-        &__active{
+        &.active::after{
+            transform: scaleX(100);
             background-color: black;
+        }
+        &.active {
             color: white;
-            & .nav__link{
-                color: white;
+            .nav__link{
+            color: white;
             }
         }
         &__mobile-trigger{
