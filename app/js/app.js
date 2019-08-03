@@ -38,7 +38,7 @@ function showOnScroll(e) {
             section.classList.add("active");
         }
     })
-    if (currentScroll >= 300) {
+    if (currentScroll >= 100) {
         nav.classList.add("active")
     }
     else {

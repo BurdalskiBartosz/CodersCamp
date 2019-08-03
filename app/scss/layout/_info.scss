@@ -33,12 +33,26 @@
         }
     }
     @media (min-width: 940px){
+        height: 230px;
+        align-items: flex-start;
+        &__info{
+            margin: 0;
+        }
+        &__item{
+            margin: 0 0 20px 0;
+        }
         &__description{
             width:50%;
+            line-height: 25px;
             margin-left: 10px;
             padding-left: 20px;
             border-top: none;
             border-left: 2px dotted $primary-color;
+        }
+    }
+    @media(min-width: 1440px){
+        &__description{
+            line-height: 35px;
         }
     }
 }

@@ -30,6 +30,7 @@
         width: 100%;
         height: 220px;
         position: relative;
+        transition: 0.3s ease;
         &:hover>.projects__description{
             opacity: 1;
         }
@@ -59,7 +60,6 @@
     }
     @media (min-width:600px){
         &__project{
-            // margin: 0 auto;
             max-width: 50%;
             &--downRow:last-child{
                 max-width: none;

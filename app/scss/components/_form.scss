@@ -34,7 +34,7 @@
         }    
         &:not(:placeholder-shown) +.form__label-text{
             transform: translateY(-27px);
-            color: $primary-color;
+            color: black;
             font-size: 10px;
         }
         &:focus + .form__label-text--textarea{

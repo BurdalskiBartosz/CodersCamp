@@ -7,6 +7,7 @@
         left: 5%;
         &--form-box{
             margin-bottom: 20px;
+            font-size: 20px;
         }
     }
     &__sidebar{
@@ -29,10 +30,8 @@
         padding: 20px;
     }
     &__address-box{
+        @include flexColumnAlignCenter;
         padding: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .breakLine{
         display: block;
@@ -68,7 +67,7 @@
                 right: -5px;
                 width: 30px;
                 height: 30px;
-                background-color: #FF9A3D;
+                background-color: $contact-color;
                 transform: rotate(45deg);    
             }
         }
