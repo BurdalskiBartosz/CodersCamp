@@ -251,7 +251,7 @@ body {
         margin: 0px; } }
 
 .header {
-  background-image: url("../../assets/pictures/header_picture/header_bcg.jpg");
+  background-image: url("/assets/pictures/header_picture/header_bcg.jpg");
   background-size: cover;
   background-position: 50% 50%;
   height: 500px;
@@ -375,19 +375,19 @@ body {
       border-right: 2px dotted #FFC53D; } }
 
 .firstPhoto {
-  background: url("../../assets/pictures/portfolio_picture/work-abroad-unspl.png"); }
+  background: url("/assets/pictures/portfolio_picture/work-abroad-unspl.png"); }
 
 .secondPhoto {
-  background: url("../../assets/pictures/portfolio_picture/20180619_150208-1.png"); }
+  background: url("/assets/pictures/portfolio_picture/20180619_150208-1.png"); }
 
 .thirdPhoto {
-  background: url("../../assets/pictures/portfolio_picture/RAW-BEETROOT-MINT.png"); }
+  background: url("/assets/pictures/portfolio_picture/RAW-BEETROOT-MINT.png"); }
 
 .fourthPhoto {
-  background: url("../../assets/pictures/portfolio_picture/32739439685_8ac3345836_b.png"); }
+  background: url("/assets/pictures/portfolio_picture/32739439685_8ac3345836_b.png"); }
 
 .fifthPhoto {
-  background: url("../../assets/pictures/portfolio_picture/porady-grafiki_10_u1.jpg"); }
+  background: url("/assets/pictures/portfolio_picture/porady-grafiki_10_u1.jpg"); }
 
 .portfolioPhoto {
   background-size: cover;
