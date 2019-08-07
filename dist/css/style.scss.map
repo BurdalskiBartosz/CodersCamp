@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,6BAA6B;AAC7B,+BAA+B;AAC/B,4BAA4B","file":"style.scss","sourcesContent":["@import \"./layout/_main.scss\";\r\n@import \"./layout/_header.scss\";\r\n@import \"./layout/_nav.scss\";\r\n"]}
