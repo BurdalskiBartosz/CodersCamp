@@ -124,6 +124,7 @@
             <div class="projects__project portfolioPhoto firstPhoto">
                 <div class="projects__description">
                     <h3 class="description__title">Design</h3>
+                    <!-- CODE_REVIEW moim zdaniem ten tekst powinien zaczynać się od następnej lini -->
                     <p class="description__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Veritatis maxime, in voluptas assumenda
                     </p>
@@ -213,6 +214,15 @@
                 <h3 class="contact__title--form-box">Let's start!</h3>
                 <form class="contact__form form" action="">
                     <label class="form__label" for="name">
+                        <!-- CODE_REVIEW tak długie tagi dzielił dla czytelności zrobiłbym tak: -->
+                        <!-- 
+                        <input 
+                            placeholder="&nbsp;" 
+                            class="form__input form__item" 
+                            type="text" 
+                            name="name" 
+                            id="name"
+                        > -->
                         <input placeholder="&nbsp;" class="form__input form__item" type="text" name="name" id="name">
                         <span class="form__label-text">Name</span>
                     </label>
@@ -241,3 +251,20 @@
 </body>
 
 </html>
+
+<!-- CODE_REVIEW -->
+<!-- Do kodu nie ma żadnych poważnych zarzutów. Dobrze zastowany BEM, kod dobrze rozdzielony na pliki. -->
+<!-- Drobne błędy w js (chociaż to chyba kwestia, że kod jest pre-es6) -->
+<!-- W 4k pasek nawigacji jest za wąski -->
+<!-- Jeden obrazek w portfolio jakoś dziwnie skacze -->
+<!-- Jedna ikona jest przezroczysta, podczas gdy inne wypełnione, średnio to wygląda według mnie -->
+<!-- Bardzo podobają mi się takie smaczki jak animacja ikony burgera, płyne przewijanie i wpływające sekcje -->
+
+
+<!-- Ocena końcowa:
+    Code quality: 10\10
+    Design quality: 9.5\10
+    Business quality: 10\10
+    Features quality: 10\10  
+    RAZEM: 39.5\40
+-->

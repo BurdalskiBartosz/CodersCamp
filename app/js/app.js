@@ -1,3 +1,7 @@
+// CODE_REVIEW najlepiej jest takie skrypty umieszczać wewnątrz:
+// document.addEventListener("DOMContentLoaded", () => {
+
+// })
 const btn = document.querySelector(".nav__mobile-trigger");
 const navContent = document.querySelector(".nav__content");
 const nav = document.querySelector(".nav");
@@ -13,9 +17,15 @@ navLink.forEach(link => {
         navContent.classList.remove("nav__content--active")
     })
 })
+// CODE_REVIEW ta funkcja jest całkiem ciekawa, ale myślę, że dałoby się ją napisać prościej
 function debounce(func, wait = 15, immediate = true) {
+    // CODE_REVIEW bezpieczniej używać let i const
     var timeout;
+    // CODE_REVIEW dobrą praktyką jest nazywanie wszystkich funkcji
     return function () {
+        // CODE_REVIEW zamiast tego contex = this, wystarczy zrobić funkcję
+        // strzałkową (z tej wyżej) i używać samego this
+        // zamiast arguments wygodniej jest używać spread operator z es6
         var context = this, args = arguments;
         var later = function () {
             timeout = null;
@@ -46,6 +56,7 @@ function showOnScroll(e) {
     }
 }
 window.addEventListener('scroll', debounce(showOnScroll));
+// Nieźle dojebane IIFE xd
 (function () {
     var scrollLinks = document.querySelectorAll('[href^="#"]');
     for (var i = 0; i < scrollLinks.length; i++) {
@@ -53,6 +64,7 @@ window.addEventListener('scroll', debounce(showOnScroll));
     }
     function scrollHandler(event) {
         event.preventDefault();
+        debugger;
         var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
         var targetElementId = this.getAttribute("href").split("#")[1];
         var goToPosition = document.getElementById(targetElementId).offsetTop - 100;
